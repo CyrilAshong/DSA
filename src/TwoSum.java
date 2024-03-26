@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class TwoSum {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int[] arr = new int[7];
+        int[] arr = new int[4];
         System.out.print("Enter target number: ");
         int target = input.nextInt();
 
