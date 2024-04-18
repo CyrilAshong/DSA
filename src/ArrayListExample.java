@@ -14,7 +14,19 @@ public class ArrayListExample {
             list.add(input.nextInt());
         }
         for (int i = 0; i < 5; i++) {
-            System.out.print(list.get(i) + " ");
+            System.out.println(list.get(i));
         }
+//        System.out.println(list);
+
+        list.add(43);
+        System.out.println(list);
+
+        list.remove(2);
+        System.out.println(list);
+
+        list.set(1, 27);
+        System.out.println(list);
+
+
     }
 }

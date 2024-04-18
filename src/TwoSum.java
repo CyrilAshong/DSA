@@ -13,7 +13,7 @@ public class TwoSum {
         }
 
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length; j++) {
+            for (int j = 1; j < arr.length; j++) {
                 if (arr[i] + arr[j] == target) {
                     int[] num = {arr[i],arr[j]};
                     System.out.println(Arrays.toString(num));
