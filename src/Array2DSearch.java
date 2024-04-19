@@ -12,6 +12,10 @@ public class Array2DSearch {
         int[] ans = search(arr, target);
         System.out.println(Arrays.toString(ans));
 
+        int result = max(arr);
+        System.out.println(result);
+
+
     }
 
     static public int[] search (int[][] arr,int target){
@@ -23,5 +27,17 @@ public class Array2DSearch {
             }
         }
         return new int[] {-1, -1};
+    }
+
+    static public int max (int[][] arr){
+        int element = Integer.MIN_VALUE; // or int element = arr[0][0];
+        for (int[] ints : arr) {
+            for (int anInt : ints) {
+                if (anInt > element) {
+                    element = anInt;
+                }
+            }
+        }
+        return element;
     }
 }
